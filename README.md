@@ -34,18 +34,18 @@
 ### d. 최상의 검증 손실 값에 따른 모델 저장(if val_loss < best_val_loss): 검증 손실 값이 가장 낮을 때 모델의 상태를 저장
 ### f. 학습 및 검증 손실 값 플롯: plot_losses 함수를 사용하여 학습 및 검증 손실 값을 플롯
 ## 4. (report) 학습과 검증의 평균 손실값을 플롯하여 검증 데이터 세트에 대한 손실값을 기준으로 바닐라 RNN과 LSTM의 언어 생성 성능을 비교.
-        1. 평균 손실 값 그래프
+### a. 평균 손실 값 그래프
            ![poster](./Figure_1.png)
-        2. RNN과 LSTM의 언어 생성 성능을 비교: 학습 초기에는 Traning의 Loss가 크지만, 학습을 에포크 4단계 이후부터는 Validation 의 Loss가 크게 나타남
+### b. RNN과 LSTM의 언어 생성 성능을 비교: 학습 초기에는 Traning의 Loss가 크지만, 학습을 에포크 4단계 이후부터는 Validation 의 Loss가 크게 나타남
         
 ## 5. [`generate.py`](http://generate.py) 로 학습된 모델로 문자 생성: 가장 우수한 유효성 검사 성능을 보이는 모델을 선택하여 서로 다른 seed 문자로부터 생성된 5가지 길이의 샘플을 최소 100개 이상 제공
-        1. A부터 Z사이의 문자 중 랜덤으로 5개 문자 선정:  seed_characters_list = [''.join(random.choice(string.ascii_uppercase) for _ in range(5)) for _ in range(5)]
-        2. 5개의 문자를 기준으로 문자 200개씩 생성
-        3. 생성된문장을 generate{햔재시분초}.txt로 저장
+### a. A부터 Z사이의 문자 중 랜덤으로 5개 문자 선정:  seed_characters_list = [''.join(random.choice(string.ascii_uppercase) for _ in range(5)) for _ in range(5)]
+### b. 5개의 문자를 기준으로 문자 200개씩 생성
+### c. 생성된문장을 generate{햔재시분초}.txt로 저장
 ## 6. (report) 온도 매개변수가 있는 Softmax 함수 T를 이용해 캐릭터를 생성: 캐릭터를 새성할 때 다양한 온도를 시도해보고 온도에 따라 어떤 차이가 있는지, 왜 더 그럴듯한 결과를 생성하는 데 도움이 되는지 토론
-        1. **온도 매개변수를 사용한 Softmax 적용**
-            1. **`output.squeeze().div(temperature).exp()`**를 사용하여 온도 매개변수를 적용
-            2. **`F.softmax(output, dim=-1).cpu()`**를 사용하여 소프트맥스 함수로 확률 분포를 계산
+### a. **온도 매개변수를 사용한 Softmax 적용**
+### b. **`output.squeeze().div(temperature).exp()`**를 사용하여 온도 매개변수를 적용
+### c. **`F.softmax(output, dim=-1).cpu()`**를 사용하여 소프트맥스 함수로 확률 분포를 계산
         - 온도 매개변수를 다양하게 설정: 온도 T로 여러 값을 시도하면, 모델이 생성하는 텍스트의 다양성과 일관성을 관찰 가능하다. 일반적으로 사용되는 온도 값은 0.5, 1.0, 1.5 등이다. 온도 값이 낮으면 모델이 더 예측 가능하고 일관성 있는 출력을 생성하며, 온도 값이 높으면 더 창의적이고 다양성 있는 출력을 생성하는 것을 확인할 수 있다.
         
 ## ※ 온도차이별 캐릭터 생성을 검증하기 위해 이야기에 나오는 주인공 5명 MARCIUS, BRUTUS, SICINIUS, CORIOLANUS, MENENIUS 을 중심으로 문자 200개씩 생성한 경우: generate_acters.txt
