@@ -35,7 +35,7 @@
 ### f. 학습 및 검증 손실 값 플롯: plot_losses 함수를 사용하여 학습 및 검증 손실 값을 플롯
 ## 4. (report) 학습과 검증의 평균 손실값을 플롯하여 검증 데이터 세트에 대한 손실값을 기준으로 바닐라 RNN과 LSTM의 언어 생성 성능을 비교.
 ### a. 평균 손실 값 그래프
-           ![poster](./Figure_1.png)
+           [평균 손실 값 그래프](https://github.com/MoonHyeJung/LngModel/blob/main/Figure_1.png)
 ### b. RNN과 LSTM의 언어 생성 성능을 비교: 학습 초기에는 Traning의 Loss가 크지만, 학습을 에포크 4단계 이후부터는 Validation 의 Loss가 크게 나타남
         
 ## 5. [`generate.py`](http://generate.py) 로 학습된 모델로 문자 생성: 가장 우수한 유효성 검사 성능을 보이는 모델을 선택하여 서로 다른 seed 문자로부터 생성된 5가지 길이의 샘플을 최소 100개 이상 제공
