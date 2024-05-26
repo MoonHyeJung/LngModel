@@ -1,0 +1,84 @@
+Temperature: 0.5
+Seed word: MARCIUS
+Generated text: MARCIUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: BRUTUS
+Generated text: BRUTUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: SICINIUS
+Generated text: SICINIUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: CORIOLANUS
+Generated text: CORIOLANUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: MENENIUS
+Generated text: MENENIUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Temperature: 1.0
+Seed word: MARCIUS
+Generated text: MARCIUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the come the people, and the people, a
+
+Seed word: BRUTUS
+Generated text: BRUTUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: SICINIUS
+Generated text: SICINIUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: CORIOLANUS
+Generated text: CORIOLANUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Seed word: MENENIUS
+Generated text: MENENIUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the pe
+
+Temperature: 1.5
+Seed word: MARCIUS
+Generated text: MARCIUS:
+The people, and my soul are shall be a man and that have should be so do you are a soul and have been and that have should be a man and my lord, and that a soul are a man and that a man the people, 
+
+Seed word: BRUTUS
+Generated text: BRUTUS:
+The people, and the people, and the people, and my soul are shall be a brothers and my lord, and my soul are shall be a man and that have should be a son, and my soul are shall be a man and that hav
+
+Seed word: SICINIUS
+Generated text: SICINIUS:
+The come the people, and the people, and the people, and the people, and the man the people, and the people, and the people, and the same and my lord, and that we have should be a man and that have 
+
+Seed word: CORIOLANUS
+Generated text: CORIOLANUS:
+The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the same and my lord, and that have should be a soul and my lord, and 
+
+Seed word: MENENIUS
+Generated text: MENENIUS:
+The people, and the people, and the people, and my lord, and that have should be a son, and the people, and the people, and the people, and the people, and my soul are shall be a man and that have s
+
+Temperature: 2.0
+Seed word: MARCIUS
+Generated text: MARCIUS:
+The people, and my grace and that you are a man and my country and that I cannot the man he was a man shall be a man and so do you are shall be so do find of the man you are a man and my brothers an
+
+Seed word: BRUTUS
+Generated text: BRUTUS:
+The people, and my mothers and present him and that have should the service of the people, and my lord, and have been and my grace and that the come the people, and present him for the people, and t
+
+Seed word: SICINIUS
+Generated text: SICINIUS:
+The world and that you are a man and that a parties and that do you are shall be the man the come the same and that have should be the man when 'twas death, and that all the same and my lord, and th
+
+Seed word: CORIOLANUS
+Generated text: CORIOLANUS:
+The people, and the people, and my soul are a sons and my lord, and that shall be so do not and that have should shall be a particle and present him and my lord, and shall have been and and do not s
+
+Seed word: MENENIUS
+Generated text: MENENIUS:
+The people, and my soul are be a chard me the come the come the man you are a sale and my lord, and that I have stand and dear and that we have should be a son, when a man you are be a particle with
+
