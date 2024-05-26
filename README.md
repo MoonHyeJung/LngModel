@@ -1,18 +1,12 @@
 # Language Model
+### 과목: 인공지능과 딥러닝
+### 과제: 문자 수준 언어 모델링을 위한 신경망 작업
+### 기한: 2024. 05. 26. 일 23:59
+### 이름: 문혜정
+### 학번: 23620026
 
-과목: 인공지능과 딥러닝
-
-과제: 문자 수준 언어 모델링을 위한 신경망 작업
-
-기한: 2024. 05. 26. 일 23:59
-
-이름: 문혜정
-
-학번: 23620026
-
-- Requirements
-    1. `dataset.py`: 모델에 데이터를 제공하기 위한 파이프라인 직접 작성
-        1. 파이프라인 구성 단계와 코드 매핑
+1. `dataset.py`: 모델에 데이터를 제공하기 위한 파이프라인 직접 작성
+       1. 파이프라인 구성 단계와 코드 매핑
             1. **데이터 로드 및 전처리**:
                 - `dataset.py` 파일의 `__init__` 메서드
             2. **Dataset 초기화**:
@@ -28,7 +22,7 @@
                 - `main.py` 파일의 `validate` 함수 정의
             6. **최적 모델 저장**:
                 - `main.py` 파일의 `torch.save(model.state_dict(), 'best_rnn_model.pth' if model_type == 'RNN' else 'best_lstm_model.pth')`
-    2. `model.py` : 모델 성능 향상을 위한 레이어 변경, GPU사용
+2. `model.py` : 모델 성능 향상을 위한 레이어 변경, GPU사용
         1. GPU 사용 설정: device를 설정하여 모델과 데이터를 GPU로 이동: torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         2. 모델과 데이터의 GPU로 이동: 모델을 초기화할 때와 데이터를 생성할 때 .to(device)를 사용하여 GPU에서 계산이 이루어지도록 슺ㅇ
         3. 은닉 상태 초기화: 은닉 상태를 초기화할 때 .to(device)를 사용하여 GPU에서 계산
