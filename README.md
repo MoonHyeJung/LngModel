@@ -49,8 +49,8 @@
         - 온도 매개변수를 다양하게 설정: 온도 T로 여러 값을 시도하면, 모델이 생성하는 텍스트의 다양성과 일관성을 관찰 가능하다. 일반적으로 사용되는 온도 값은 0.5, 1.0, 1.5 등이다. 온도 값이 낮으면 모델이 더 예측 가능하고 일관성 있는 출력을 생성하며, 온도 값이 높으면 더 창의적이고 다양성 있는 출력을 생성하는 것을 확인할 수 있다.
         
 ## ※ gnerate2.py: 온도차이별 캐릭터 생성을 검증하기 위해 이야기에 나오는 주인공 5명 MARCIUS, BRUTUS, SICINIUS, CORIOLANUS, MENENIUS 을 중심으로 문자 200개씩 생성하여: generate_acters.txt 파일로 저장
-### a. 온도가 0일때 BRUTUS가 seed인 문장은 아래처럼 매우 단순한데
+### a. 온도가 0으로 낮을 때 BRUTUS가 seed인 문장은 아래처럼 매우 단순한데
 #### The people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the people, and the peseed
-### b. 온도가 0일때 BRUTUS가 seed인 문장은 아래처럼 달변가로 변해있는걸 확인가능함
+### b. 온도가 2로 높을 때 BRUTUS가 seed인 문장은 아래처럼 달변가로 변해있는걸 확인가능함
 #### The people, and my mothers and present him and that have should the service of the people, and my lord, and have been and my grace and that the come the people, and present him for the people, and ...
         
