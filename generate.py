@@ -4,7 +4,7 @@ import numpy as np
 import datetime
 import random
 import string
-import torch.nn.functional as F  # 소프트맥스 함수를 사용하기 위해 추가
+import torch.nn.functional as F
 
 def generate_with_temperature(model, seed_characters, temperature, device, char_to_idx, idx_to_char, length=200):
     """ Generate characters with temperature parameter
@@ -42,7 +42,7 @@ def main():
     hidden_size = 128
     num_layers = 2
     model_type = 'RNN'  # LSTM 모델을 사용하려면 'LSTM'으로 변경
-    temperature = 0.8
+    temperatures = [0.5, 1.0, 1.5]  # 다양한 온도 값 리스트
 
     # A에서 Z 사이의 랜덤 시드 문자 생성
     seed_characters_list = [''.join(random.choice(string.ascii_uppercase) for _ in range(5)) for _ in range(5)]
@@ -70,12 +70,14 @@ def main():
     current_time = datetime.datetime.now().strftime("%H%M%S")
     filename = f"generate_{current_time}.txt"
     with open(filename, 'w') as f:
-        for seed_characters in seed_characters_list:
-            generated_text = generate_with_temperature(model, seed_characters, temperature, device, char_to_idx, idx_to_char, length)
-            f.write(f"Seed characters: {seed_characters}\n")
-            f.write(f"Generated text: {generated_text}\n\n")
-            print(f"Seed characters: {seed_characters}")
-            print(f"Generated text: {generated_text}\n")
+        for temperature in temperatures:
+            f.write(f"Temperature: {temperature}\n")
+            for seed_characters in seed_characters_list:
+                generated_text = generate_with_temperature(model, seed_characters, temperature, device, char_to_idx, idx_to_char, length)
+                f.write(f"Seed characters: {seed_characters}\n")
+                f.write(f"Generated text: {generated_text}\n\n")
+                print(f"Temperature: {temperature}, Seed characters: {seed_characters}")
+                print(f"Generated text: {generated_text}\n")
 
 if __name__ == '__main__':
     main()
