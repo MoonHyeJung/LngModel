@@ -11,21 +11,21 @@
 학번: 23620026
 
 - Requirements
-    1. `[dataset.py](./dataset.py)`: 모델에 데이터를 제공하기 위한 파이프라인 직접 작성
+    1. `dataset.py`: 모델에 데이터를 제공하기 위한 파이프라인 직접 작성
         1. 파이프라인 구성 단계와 코드 매핑
             1. **데이터 로드 및 전처리**:
-                - `[dataset.py](./dataset.py)` 파일의 `__init__` 메서드
+                - `dataset.py` 파일의 `__init__` 메서드
             2. **Dataset 초기화**:
-                - `[dataset.py](./dataset.py)` 파일의 `__init__` 메서드
-                - `[main.py](./main.py)` 파일의 `dataset = Shakespeare('shakespeare_train.txt')`
+                - `dataset.py` 파일의 `__init__` 메서드
+                - `main.py` 파일의 `dataset = Shakespeare('shakespeare_train.txt')`
             3. **DataLoader 생성**:
-                - `[main.py](./main.py)` 파일의 `train_loader`와 `val_loader`
+                - `main.py` 파일의 `train_loader`와 `val_loader`
             4. **모델 학습 루프**:
-                - `[main.py](./main.py)` 파일의 `train_loss = train(model, train_loader, device, criterion, optimizer)`
-                - `[main.py](./main.py)` 파일의 `train` 함수 정의
+                - `main.py` 파일의 `train_loss = train(model, train_loader, device, criterion, optimizer)`
+                - `main.py` 파일의 `train` 함수 정의
             5. **모델 검증 루프**:
-                - `[main.py](./main.py)` 파일의 `val_loss = validate(model, val_loader, device, criterion)`
-                - `[main.py](./main.py)` 파일의 `validate` 함수 정의
+                - `main.py` 파일의 `val_loss = validate(model, val_loader, device, criterion)`
+                - `main.py` 파일의 `validate` 함수 정의
             6. **최적 모델 저장**:
                 - `main.py` 파일의 `torch.save(model.state_dict(), 'best_rnn_model.pth' if model_type == 'RNN' else 'best_lstm_model.pth')`
     2. `model.py` : 모델 성능 향상을 위한 레이어 변경, GPU사용
